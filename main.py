@@ -5,7 +5,11 @@ app = Flask(__name__)
 
 @app.route('/')
 def hello_world():
-    return 'Hello, World!'
+    return "Hello, World!"
+
+@app.route('/b2')
+def branch2():
+    return 'Hello, branch2!'
 
 if __name__ == "__main__":
     app.run(host=Config.HOST, port=Config.PORT, debug=Config.PORT)
