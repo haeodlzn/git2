@@ -15,5 +15,9 @@ def branch2():
 def branch3():
     return 'Hello, branch3 on github!'
 
+@app.route('/b31')
+def branch3():
+    return 'Hello, branch31 on local!'
+
 if __name__ == "__main__":
     app.run(host=Config.HOST, port=Config.PORT, debug=Config.PORT)
