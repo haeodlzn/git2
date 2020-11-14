@@ -11,5 +11,9 @@ def hello_world():
 def branch2():
     return 'Hello, branch2!'
 
+@app.route('/b21')
+def branch21():
+    return 'Hello, b21!'
+
 if __name__ == "__main__":
     app.run(host=Config.HOST, port=Config.PORT, debug=Config.PORT)
